@@ -189,20 +189,20 @@ span {
     box-sizing: 0 0 50px var(--main-color-1);
 }
 
-.btn-group{
+.btn-group {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
 
-.btn-group a:nth-of-type(2){
+.btn-group a:nth-of-type(2) {
     background-color: black;
     color: var(--main-color-1);
     border: 2px solid var(--main-color-1);
     box-shadow: 0 0 25px transparent;
 }
 
-.btn-group a:nth-of-type(2):hover{
+.btn-group a:nth-of-type(2):hover {
     box-shadow: 0 0 25px var(--main-color-1);
     background-color: var(--main-color-1);
     color: black;
