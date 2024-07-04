@@ -408,3 +408,28 @@ span {
     background-color: var(--bg-color);
     width: 50px;
 }
+
+.services{
+    background-color: var(--bg-color);
+    color: black;
+}
+
+.services h2{
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.service-box{
+    background-color: var(--main-color-1);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+}
