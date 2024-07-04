@@ -208,23 +208,23 @@ span {
     color: black;
 }
 
-.text-animaton{
+.text-animaton {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
 
-.text-animaton span{
+.text-animaton span {
     position: relative;
 }
 
-.text-animaton span::before{
+.text-animaton span::before {
     content: 'Web Developer';
     color: var(--main-color-1);
     animation: words 20s infinite;
 }
 
-.text-animaton span::after{
+.text-animaton span::after {
     content: '';
     background-color: var(--bg-color);
     position: absolute;
@@ -236,59 +236,83 @@ span {
 }
 
 @keyframes cursor {
-    to{
+    to {
         border-left: 2px solid var(--main-color-1);
     }
 }
 
 @keyframes words {
-    0%, 20%{
+
+    0%,
+    20% {
         content: 'Frontend Designer';
     }
 
-    21%, 40%{
+    21%,
+    40% {
         content: "Web Designer";
     }
 
-    41%, 60%{
+    41%,
+    60% {
         content: 'UI / UX Designer';
     }
 
-    61%, 80%{
+    61%,
+    80% {
         content: 'Web Developer';
     }
 
-    81%, 100%{
+    81%,
+    100% {
         content: 'Software Tester';
     }
 }
 
 @keyframes typing {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
         width: 0;
     }
 
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: calc(100% + 8px);
     }
 }
 
-.heading{
+.heading {
     font-size: 8rem;
     text-align: center;
     margin: 5rem 0;
 }
 
-.education{
+.education {
     padding: 100px 15px;
     background: var(--second-bg-color);
 }
 
-.education h2{
+.education h2 {
     margin-bottom: 5rem;
 }
 
-.timeline-items{
+.timeline-items {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -296,7 +320,7 @@ span {
     position: relative;
 }
 
-.timeline-items::before{
+.timeline-items::before {
     content: '';
     position: absolute;
     width: 5px;
@@ -305,45 +329,45 @@ span {
     left: calc(50% - 1px);
 }
 
-.timeline-item{
+.timeline-item {
     margin-bottom: 40px;
     width: 100%;
     position: relative;
 }
 
-.timeline-item:last-child{
+.timeline-item:last-child {
     margin-bottom: 0;
 }
 
-.timeline-item:nth-child(odd){
+.timeline-item:nth-child(odd) {
     padding-right: calc(50% + 30px);
     text-align: right;
-} 
+}
 
-.timeline-item:nth-child(even){
+.timeline-item:nth-child(even) {
     padding-left: calc(50% + 30px);
 }
 
-.timeline-dot{
+.timeline-dot {
     height: 21px;
     width: 21px;
     background-color: var(--main-color-1);
     box-shadow: 0 0 25px var(--main-color-1),
-                0 0 25px var(--main-color-1);
+        0 0 25px var(--main-color-1);
     position: absolute;
     left: calc(50% - 8px);
     border-radius: 50px;
     top: 10px;
 }
 
-.timeline-date{
+.timeline-date {
     font-size: 20px;
     font-weight: 800;
     color: white;
     margin: 6px 0 15px;
 }
 
-.timeline-content{
+.timeline-content {
     background-color: var(--bg-color);
     border: 3px solid var(--main-color-1);
     padding: 30px 50px;
@@ -353,19 +377,19 @@ span {
     transition: .3s ease-in-out;
 }
 
-.timeline-content:hover{
+.timeline-content:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color-1);
 }
 
-.timeline-content h3{
+.timeline-content h3 {
     font-size: 20px;
     color: white;
     margin: 0 0 10px;
     font-weight: 500;
 }
 
-.timeline-content p{
+.timeline-content p {
     color: white;
     font-size: 16px;
     font-weight: 300;
