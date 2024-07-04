@@ -331,5 +331,7 @@ span {
     box-shadow: 0 0 25px var(--main-color-1),
                 0 0 25px var(--main-color-1);
     position: absolute;
-    left: ;
+    left: calc(50% - 8px);
+    border-radius: 50px;
+    top: 10px;
 }
