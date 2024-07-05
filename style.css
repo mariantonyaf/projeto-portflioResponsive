@@ -533,16 +533,16 @@ span {
     font-size: 2rem;
 }
 
-.contact{
+.contact {
     background-color: var(--bg-color);
 }
 
-.contact h2{
+.contact h2 {
     margin-bottom: 3rem;
     color: #fff;
 }
 
-.contact form{
+.contact form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -551,14 +551,14 @@ span {
     text-align: center;
 }
 
-.contact form .input-box{
+.contact form .input-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .contact form .input-box input,
-.contact form textarea{
+.contact form textarea {
     width: 100%;
     padding: 2.5rem;
     font-size: 1.8rem;
@@ -570,11 +570,11 @@ span {
     resize: none;
 }
 
-.contact form .btn{
+.contact form .btn {
     margin-top: 2rem;
 }
 
-.footer{
+.footer {
     position: relative;
     bottom: 0;
     width: 100%;
@@ -582,13 +582,13 @@ span {
     background-color: var(--second-bg-color);
 }
 
-.footer .social{
+.footer .social {
     text-align: center;
     padding-bottom: 25px;
     color: var(--main-color-1);
 }
 
-.footer .social a{
+.footer .social a {
     font-size: 25px;
     color: var(--main-color-1);
     border: 2px solid var(--main-color-1);
@@ -602,14 +602,14 @@ span {
     transition: .3s ease-in-out;
 }
 
-.footer .social a:hover{
+.footer .social a:hover {
     transform: scale(1.2)translateY(-10px);
     background-color: var(--main-color-1);
     color: #000;
     box-shadow: 0 0 25px var(--main-color-1);
 }
 
-.footer ul{
+.footer ul {
     margin-top: 0;
     padding: 0;
     font-size: 18px;
@@ -618,13 +618,13 @@ span {
     text-align: center;
 }
 
-.footer ul li a{
+.footer ul li a {
     color: #fff;
     border-bottom: 3px solid transparent;
     transition: .3s ease-in-out;
 }
 
-.footer ul li a:hover{
+.footer ul li a:hover {
     border-bottom: 3px solid var(--main-color-1);
 }
 
@@ -633,71 +633,71 @@ span {
     padding: 0 15px;
 }
 
-.footer .copyright{
+.footer .copyright {
     margin-top: 50px;
     text-align: center;
     font-size: 16px;
     color: #fff;
 }
 
-@media(max-width: 1258px){
-    html{
+@media(max-width: 1258px) {
+    html {
         font-size: 55%;
     }
 
-    .services-container{
+    .services-container {
         padding-bottom: 7rem;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
     }
 }
 
-@media(max-width: 991px){
-    header{
+@media(max-width: 991px) {
+    header {
         padding: 2rem 3%;
     }
 
-    section{
+    section {
         padding: 10rem 3% 2rem;
     }
 
-    .timeline-item:nth-child(odd){
+    .timeline-item:nth-child(odd) {
         padding-right: 0;
         text-align: left;
     }
 
     .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even){
+    .timeline-item:nth-child(even) {
         padding-left: 37px;
     }
 
-    .timeline-dot{
+    .timeline-dot {
         left: 0;
     }
 
-    .services{
+    .services {
         padding-bottom: 7rem;
     }
 
-    .testimonials .wrapper{
-        grid-template-columns: repeat(1,1fr);
+    .testimonials .wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .contact form{
+    .contact form {
         flex-direction: column;
     }
 
-    .footer{
+    .footer {
         padding: 2rem 3%;
     }
 }
 
-@media(max-width: 895px){
-    #menu-icon{
+@media(max-width: 895px) {
+    #menu-icon {
         display: block;
     }
 
-    .navbar{
+    .navbar {
         position: absolute;
         top: 100%;
         right: 0;
@@ -709,5 +709,47 @@ span {
         border-left: 2px solid var(--main-color-1);
         border-bottom: 2px solid var(--main-color-1);
         display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: #fff;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+
+    .home-content p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .home-img {
+        width: 56vw;
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
